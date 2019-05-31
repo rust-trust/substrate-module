@@ -1,0 +1,29 @@
+[package]
+name = "substrate-module-template"
+version = "0.1.0"
+authors = ["Shawn Tabrizi <shawntabrizi@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+hex-literal = "0.1.0"
+serde = { version = "1.0", optional = true }
+parity-codec = { version = "3.2", default-features = false }
+srml-support = { git = "https://github.com/paritytech/substrate.git", branch = "v1.0", default-features = false }
+system = { package = "srml-system", git = "https://github.com/paritytech/substrate.git", branch = "v1.0", default-features = false }
+balances = { package = "srml-balances", git = "https://github.com/paritytech/substrate.git", branch = "v1.0", default-features = false }
+
+[dev-dependencies]
+sr-io = { git = "https://github.com/paritytech/substrate.git", branch = "v1.0" }
+substrate-primitives = { git = "https://github.com/paritytech/substrate.git", branch = "v1.0" }
+sr-primitives = { git = "https://github.com/paritytech/substrate.git", branch = "v1.0" }
+
+[features]
+default = ["std"]
+std = [
+	"serde",
+	"parity-codec/std",
+	"sr-primitives/std",
+	"srml-support/std",
+	"system/std",
+	"balances/std",
+]
