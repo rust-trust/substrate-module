@@ -11,11 +11,11 @@ parity-codec = { version = "3.2", default-features = false }
 srml-support = { git = "https://github.com/paritytech/substrate.git", branch = "v1.0", default-features = false }
 system = { package = "srml-system", git = "https://github.com/paritytech/substrate.git", branch = "v1.0", default-features = false }
 balances = { package = "srml-balances", git = "https://github.com/paritytech/substrate.git", branch = "v1.0", default-features = false }
+sr-primitives = { git = "https://github.com/paritytech/substrate.git", branch = "v1.0" }
 
 [dev-dependencies]
 sr-io = { git = "https://github.com/paritytech/substrate.git", branch = "v1.0" }
 substrate-primitives = { git = "https://github.com/paritytech/substrate.git", branch = "v1.0" }
-sr-primitives = { git = "https://github.com/paritytech/substrate.git", branch = "v1.0" }
 
 [features]
 default = ["std"]
