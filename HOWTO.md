@@ -56,17 +56,25 @@ We won't teach you the details of using Cargo, but feel free to [become a master
 
 ## Building and Testing
 
-Before you release your module, you should check that it can build:
+Before you release your module, you should check that it can:
 
-```
-cargo build
-```
+1. Build to Native:
 
-and that your tests pass:
+    ```
+    cargo build
+    ```
 
-```
-cargo test
-```
+2. Build to Wasm:
+
+    ```rust
+    cargo build --target=wasm32-unknown-unknown --no-default-features
+    ```
+
+3. Pass your tests:
+
+    ```
+    cargo test
+    ```
 
 ## Update the README
 
