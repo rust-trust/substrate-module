@@ -2,6 +2,18 @@
 
 Simply fork this project and start your runtime development in `lib.rs`.
 
+## Update Your Package Information
+
+In the `Cargo.toml` file of this template, you should update the name and authors of this module:
+
+```rust
+[package]
+name = "<YOUR_MODULE_NAME>"
+version = "0.1.0"
+authors = ["<YOUR_NAME>"]
+edition = "2018"
+```
+
 ## Updating Your Dependencies
 
 For the time being, Substrate does not have any releases on Cargo, which means there is some magic involved with ensuring that all the dependencies of your module and the downstream runtime are the same.
