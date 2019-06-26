@@ -60,6 +60,10 @@ and include it in your `construct_runtime!` macro:
 ExampleModule: substrate_module_template::{Module, Call, Storage, Event<T>},
 ```
 
+### Genesis Configuration
+
+This template module does not have any genesis configuration.
+
 ## Reference Docs
 
 You can view the reference docs for this module by running:
