@@ -7,39 +7,40 @@ edition = "2018"
 [features]
 default = ['std']
 std = [
-    'parity-codec/std',
+    'codec/std',
     'support/std',
     'system/std',
 ]
 
-[dependencies.parity-codec]
+[dependencies.codec]
 default-features = false
 features = ['derive']
-version = '3.5'
+package = 'parity-scale-codec'
+version = '1.0.0'
 
 [dependencies.support]
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'srml-support'
-branch = 'v1.0'
+rev = '3ba0f2a2dbd37c31851a0ff1c1c0c47aa940de90'
 
 [dependencies.system]
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'srml-system'
-branch = 'v1.0'
+rev = '3ba0f2a2dbd37c31851a0ff1c1c0c47aa940de90'
 
 [dev-dependencies.primitives]
 git = 'https://github.com/paritytech/substrate.git'
 package = 'substrate-primitives'
-branch = 'v1.0'
+rev = '3ba0f2a2dbd37c31851a0ff1c1c0c47aa940de90'
 
-[dev-dependencies.runtime-primitives]
+[dev-dependencies.sr-primitives]
 git = 'https://github.com/paritytech/substrate.git'
 package = 'sr-primitives'
-branch = 'v1.0'
+rev = '3ba0f2a2dbd37c31851a0ff1c1c0c47aa940de90'
 
 [dev-dependencies.runtime-io]
 git = 'https://github.com/paritytech/substrate.git'
 package = 'sr-io'
-branch = 'v1.0'
+rev = '3ba0f2a2dbd37c31851a0ff1c1c0c47aa940de90'
