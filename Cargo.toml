@@ -11,6 +11,8 @@ std = [
     'codec/std',
     'support/std',
     'system/std',
+    'sr-primitives/std',
+    'runtime-io/std',
 ]
 
 [dependencies.serde]
@@ -27,25 +29,27 @@ version = '1.0.0'
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'srml-support'
-rev = '3ba0f2a2dbd37c31851a0ff1c1c0c47aa940de90'
+rev = '7d7e74fb77b6bee2ce9d6ebafcae09caff2d0e50'
 
 [dependencies.system]
 default_features = false
 git = 'https://github.com/paritytech/substrate.git'
 package = 'srml-system'
-rev = '3ba0f2a2dbd37c31851a0ff1c1c0c47aa940de90'
+rev = '7d7e74fb77b6bee2ce9d6ebafcae09caff2d0e50'
+
+[dependencies.sr-primitives]
+default_features = false
+git = 'https://github.com/paritytech/substrate.git'
+package = 'sr-primitives'
+rev = '7d7e74fb77b6bee2ce9d6ebafcae09caff2d0e50'
+
+[dependencies.runtime-io]
+default_features = false
+git = 'https://github.com/paritytech/substrate.git'
+package = 'sr-io'
+rev = '7d7e74fb77b6bee2ce9d6ebafcae09caff2d0e50'
 
 [dev-dependencies.primitives]
 git = 'https://github.com/paritytech/substrate.git'
 package = 'substrate-primitives'
-rev = '3ba0f2a2dbd37c31851a0ff1c1c0c47aa940de90'
-
-[dev-dependencies.sr-primitives]
-git = 'https://github.com/paritytech/substrate.git'
-package = 'sr-primitives'
-rev = '3ba0f2a2dbd37c31851a0ff1c1c0c47aa940de90'
-
-[dev-dependencies.runtime-io]
-git = 'https://github.com/paritytech/substrate.git'
-package = 'sr-io'
-rev = '3ba0f2a2dbd37c31851a0ff1c1c0c47aa940de90'
+rev = '7d7e74fb77b6bee2ce9d6ebafcae09caff2d0e50'
